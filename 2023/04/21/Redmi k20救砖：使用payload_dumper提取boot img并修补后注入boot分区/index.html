@@ -1745,7 +1745,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1682661866166),
+    lastupdate: new Date(1684653515162),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2517,7 +2517,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
     <p>给Redmi k20升级到magisk26结果卡死在fastboot……<br>怀疑是升级后boot.img损坏，于是尝试下载redmi k20的系统包找出boot.img之后用magisk修补，再用fastboot刷入boot分区。<br>结局是依然卡在fastboot……最后只能用MI Flash Tool线刷恢复。</p>
-<img src="/2023/04/21/Redmi%20k20%E6%95%91%E7%A0%96%EF%BC%9A%E4%BD%BF%E7%94%A8payload_dumper%E6%8F%90%E5%8F%96boot%20img%E5%B9%B6%E4%BF%AE%E8%A1%A5%E5%90%8E%E6%B3%A8%E5%85%A5boot%E5%88%86%E5%8C%BA/image.jpg" class="lazyload" data-srcset="/2023/04/21/Redmi%20k20%E6%95%91%E7%A0%96%EF%BC%9A%E4%BD%BF%E7%94%A8payload_dumper%E6%8F%90%E5%8F%96boot%20img%E5%B9%B6%E4%BF%AE%E8%A1%A5%E5%90%8E%E6%B3%A8%E5%85%A5boot%E5%88%86%E5%8C%BA/image.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class=" lazyload">
+
 
 <h2 id="1-提取boot-img"><a href="#1-提取boot-img" class="headerlink" title="1 提取boot.img"></a>1 提取boot.img</h2><p>在系统分区网站寻找对应的系统线刷包（必须是线刷包），下载并提取出boot.img。</p>
 <p>或者，如果当前安装的系统版本尚未提供先刷版本，可以从卡刷版中解压出payload文件、并使用payload_dumper.exe快速提取。</p>

@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/2023/04/24/标签模板/"/>
+  <link rel="canonical" href="http://example.com/2023/05/19/部署filebrowser轻量网盘服务/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -32,29 +32,23 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签模板 - MagicBook</title>
-  <meta name="keywords" content="Fastboot,Hexo,Code,SoVits,GPT,Claude,Hardware,Software,Xiaomi,null">
-  <meta desc name="description" content="~MagicNue的魔法书~ - MagicNue - MagicBook">
+  <title>部署Filebrowser轻量网盘服务 - MagicBook</title>
+  <meta name="keywords" content="Code,Filebrowser,Server,null">
+  <meta desc name="description" content="File Browser是开源的文件管理服务，被用于远程管理不具备图形的界面。同时也可用运输网盘服务。 - MagicNue - MagicBook">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="标签模板">
-<meta property="og:url" content="http://example.com/2023/04/24/%E6%A0%87%E7%AD%BE%E6%A8%A1%E6%9D%BF/index.html">
+<meta property="og:title" content="部署Filebrowser轻量网盘服务">
+<meta property="og:url" content="http://example.com/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/index.html">
 <meta property="og:site_name" content="MagicBook">
-<meta property="og:description" content="本文章用于在这里提供一份标签列表。Tag记录在本文章所在的MD文件的front-matter中。">
+<meta property="og:description" content="File Browser是开源的文件管理服务，被用于远程管理不具备图形的界面。同时也可用运输网盘服务。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-04-24T13:43:41.000Z">
-<meta property="article:modified_time" content="2023-05-08T14:00:11.210Z">
+<meta property="article:published_time" content="2023-05-19T13:28:00.000Z">
+<meta property="article:modified_time" content="2023-05-21T07:10:17.820Z">
 <meta property="article:author" content="MagicNue">
-<meta property="article:tag" content="Fastboot">
-<meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Code">
-<meta property="article:tag" content="SoVits">
-<meta property="article:tag" content="GPT">
-<meta property="article:tag" content="Claude">
-<meta property="article:tag" content="Hardware">
-<meta property="article:tag" content="Software">
-<meta property="article:tag" content="Xiaomi">
+<meta property="article:tag" content="Filebrowser">
+<meta property="article:tag" content="Server">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2455,7 +2449,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/24/标签模板/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/19/部署Filebrowser轻量网盘服务/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="MagicBook">
   </span>
@@ -2476,7 +2470,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        标签模板
+        部署Filebrowser轻量网盘服务
       </h1>
       <div class='new-meta-box'>
         
@@ -2497,10 +2491,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-04-24T21:43:41+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-05-19T21:28:00+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2023年4月24日</p>
+    <p>发布于：2023年5月19日</p>
   </a>
 </div>
 
@@ -2523,7 +2517,65 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>本文章用于在这里提供一份标签列表。Tag记录在本文章所在的MD文件的front-matter中。</p>
+    <h1 id="File-Browser是什么？"><a href="#File-Browser是什么？" class="headerlink" title="File Browser是什么？"></a>File Browser是什么？</h1><blockquote>
+<p>filebrowser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users and each user can have its own directory. It can be used as a standalone app. </p>
+<p>FileBrowser在指定目录中提供了一个文件管理界面，可用于上传，删除，预览，重命名和编辑文件。它允许创建多个用户，每个用户都可以有自己的目录。它可以用作独立的应用程序。</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://filebrowser.org/">Welcome to <em>File Browser’s</em> official documentation.</a><br>File Browser是开源的文件管理服务，被用于远程管理不具备图形的界面。同时也可用运输网盘服务。</p>
+<h1 id="通过Docker-安装"><a href="#通过Docker-安装" class="headerlink" title="通过Docker 安装"></a>通过Docker 安装</h1><p>挂载到&#x2F;mnt&#x2F;md0&#x2F;appdata&#x2F;filebrowser：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker run --name filebrowser -d -v /mnt/md0/appdata/filebrowser/srv:/srv -v /mnt/md0/appdata/filebrowser/filebrowserconfig.json:/etc/config.json -v /mnt/md0/appdata/filebrowser/database.db:/etc/database.db -p 8888:80 filebrowser/filebrowser</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>挂载到&#x2F;mnt&#x2F;md0&#x2F;nas：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --name filebrowser2 -d -v /mnt/md0/nas:/srv -v /mnt/md0/appdata/filebrowser2/filebrowserconfig.json:/etc/config.json -v /mnt/md0/appdata/filebrowser2/database.db:/etc/database.db -p 8888:80 filebrowser/filebrowser</span><br></pre></td></tr></table></figure>
+
+<h1 id="在Linux上，通过ssh安装"><a href="#在Linux上，通过ssh安装" class="headerlink" title="在Linux上，通过ssh安装"></a>在Linux上，通过ssh安装</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash</span><br><span class="line">filebrowser -r /path/to/your/files</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="在windows上部署"><a href="#在windows上部署" class="headerlink" title="在windows上部署"></a>在windows上部署</h1><p>在windows上可以使用命令行便利地部署filebrowser。<br><a target="_blank" rel="noopener" href="https://github.com/filebrowser/filebrowser/releases">Releases · filebrowser&#x2F;filebrowser</a><br>在release页面上下载适用于本机架构的压缩文件后，解压为可执行文件，双击或者在命令行输入<code>./filebrowser</code>来运行。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.\filebrowser</span><br><span class="line">Listening on 127.0.0.1:8080</span><br></pre></td></tr></table></figure>
+
+<p>这是一种最简便的部署方法。启用后便可以在本地通过8080端口访问，默认账户与密码均是<code>admin</code>。</p>
+<p>如果有更多需求需要配置，例如更改文件的网盘目录，我们需要对<code>filebrowser</code>进行配置。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.\filebrowser config init</span><br><span class="line"># 初始化filebrowser数据库。如果报错，意味着filebrowser.db已存在。如果运行过filebrowser.exe，那么也会自动创建一个filebrowser.db。</span><br><span class="line">.\filebrowser config set</span><br><span class="line"># 显示配置选项。</span><br><span class="line">.\filebrowser config set --root E:\</span><br><span class="line"># 修改网盘的主目录。在这一例中，将目录设置为E盘根目录。</span><br></pre></td></tr></table></figure>
+
+<p>接下来就可以开始作为网盘&#x2F;网页文件管理器使用了。更常见的是搭配内网穿透作为服务器来使用。</p>
+<h1 id="美化（可选）"><a href="#美化（可选）" class="headerlink" title="美化（可选）"></a>美化（可选）</h1><p>对于自定义部署的filebrowser，在官方文档中有三个位置可以自定义：</p>
+<ul>
+<li><strong>Name（名称）:</strong> which is the instance name that will show up on login and signup pages. This won’t replace the version message in the sidebar.  </li>
+<li><strong>Disable external links（禁用外部链接）:</strong> this will disable any external links (except the ones to this documentation).  </li>
+<li><strong>Folder（文件夹）:</strong> is the path to a directory that can contain two items:</li>
+</ul>
+<p>以部署在windows上的filebrowser为例——</p>
+<ol>
+<li>更改名称：</li>
+</ol>
+<ul>
+<li>在管理员页面，进入设置&gt;全局设置&gt;实例名称中修改。这会修改登录页的标题与标签页的标题。</li>
+<li>或者，在命令行中输入<code>filebrowser config set branding.name &lt;自定义标题&gt;</code>并且重载。</li>
+</ul>
+<hr>
+<ol>
+<li>更改logo与icon，甚至使用CSS配置网站样式</li>
+</ol>
+<ul>
+<li>前提是在设置&gt;全局设置&gt;品牌信息文件夹路径中定位一个目录。定位文件夹后，filebrowser会在该其中搜寻并代替原有的filebrowser图标，以下更改才会生效。<br>或者，在命令行中输入filebrowser config set branding.files &lt;自定义目录&gt;并且重载。</li>
+<li>如果要更改Logo，就在该目录中创建img目录，并在img放入logo.svg并重载。这会改变登录登录页与主页左上角的图标。</li>
+<li>如果要更改icon，就在img中创建icons目录，并在icons中放入PNG文件并重载，这会改变标签页图标。<em>注意：至少需要放置（16x16）与（32x32）两个分辨率不同的PNG文件，这项修改才会生效。</em></li>
+<li>如果要更改网站样式，则在品牌信息文件夹路径中放入CSS格式的文件。</li>
+</ul>
+<hr>
+<ol start="3">
+<li>关闭自定义链接：在设置&gt;全局设置&gt;禁止外部链接（帮助文档除外）项勾选后保存。<br>或者，在命令行输入<code>filebrowser config set --branding.disableExternal</code></li>
+</ol>
+<p><em>注意：要使用命令行进行以上修改时，服务需在停止状态。</em></p>
+<h1 id="filebrowser配置的常用命令"><a href="#filebrowser配置的常用命令" class="headerlink" title="filebrowser配置的常用命令"></a>filebrowser配置的常用命令</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">filebrowser config init</span><br><span class="line"># 第一次部署前的数据库初始化</span><br><span class="line">filebrowser config set</span><br><span class="line"># 列出数据库中的配置项目</span><br><span class="line">filebrowser config set --port 8080</span><br><span class="line"># 修改服务端口</span><br></pre></td></tr></table></figure>
+<h1 id="在后台启停服务，并配置开机启动"><a href="#在后台启停服务，并配置开机启动" class="headerlink" title="在后台启停服务，并配置开机启动"></a>在后台启停服务，并配置开机启动</h1><p>如果不想看到运行时的命令行界面，可以使用vscript来制作两个简单的启停脚本。</p>
+<ul>
+<li>后台启动脚本：<br>创建一个文本文档，重命名为autorun_filebrowser.vbs。<br>在文档中输入并保存以下内容：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Dim ws</span><br><span class="line">Set ws = Wscript.CreateObject(&quot;Wscript.Shell&quot;)</span><br><span class="line">ws.run &quot;filebrowser.exe&quot;,vbhide</span><br><span class="line">Wscript.quit</span><br></pre></td></tr></table></figure></li>
+<li>后台停止脚本：<br>创建一个文本文档，重命名为autostop_filebrowser.vbs。<br>在文档中输入并保存以下内容：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Dim ws</span><br><span class="line">Set ws = Wscript.CreateObject(&quot;Wscript.Shell&quot;)</span><br><span class="line">ws.run &quot;taskkill /f /im filebrowser.exe&quot;,0</span><br><span class="line">Wscript.quit</span><br></pre></td></tr></table></figure>
+由于使用的是相对路径，这两个文件需要放在filebrowser运行文件夹中。或者可以使用绝对路径，这样这两个脚本就可以放在本机任何地方——除非filebrowser软件被移动。</li>
+<li>配置开机启动：<br>将autorun_filebrowser.vbs创建一个快捷方式并放入：<code>C:\Users\&lt;User&gt;\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup</code>目录中。可以在Win+r中输入<code>shell:startup</code>来快速打开这个文件夹。<br>这样就配置了filebrowser.exe的开机启动服务。可以在任务管理器&gt;启动应用中设置开机自启的开关。</li>
+</ul>
+<h1 id="为filebrowser配置内网穿透"><a href="#为filebrowser配置内网穿透" class="headerlink" title="为filebrowser配置内网穿透"></a>为filebrowser配置内网穿透</h1><p>filebrowser服务端默认在http开放8080端口，在https开放<br>传送门：[[使用Cerbot申请Let’s encrypt证书，并部署在filebrowser服务器]]</p>
 
   </div>
   
@@ -2548,10 +2600,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-05-08T22:00:11+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-05-21T15:10:17+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年5月8日</p>
+    <p>更新于：2023年5月21日</p>
   </a>
 </div>
 
@@ -2560,8 +2612,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Fastboot/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Fastboot</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hexo/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Hexo</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Code/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Code</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/SoVits/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>SoVits</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/GPT/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>GPT</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Claude/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Claude</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hardware/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Hardware</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Software/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Software</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Xiaomi/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Xiaomi</p></a></div>
-  <span hidden itemprop="keywords">Fastboot Hexo Code SoVits GPT Claude Hardware Software Xiaomi</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Code/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Code</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Filebrowser/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Filebrowser</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Server/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Server</p></a></div>
+  <span hidden itemprop="keywords">Code Filebrowser Server</span>
 
 
         
@@ -2574,7 +2626,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/04/24/%E6%A0%87%E7%AD%BE%E6%A8%A1%E6%9D%BF/&title=标签模板 - MagicBook&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/&title=部署Filebrowser轻量网盘服务 - MagicBook&summary="
           
           >
           
@@ -2586,7 +2638,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/04/24/%E6%A0%87%E7%AD%BE%E6%A8%A1%E6%9D%BF/&title=标签模板 - MagicBook&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/&title=部署Filebrowser轻量网盘服务 - MagicBook&summary="
           
           >
           
@@ -2598,7 +2650,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/04/24/%E6%A0%87%E7%AD%BE%E6%A8%A1%E6%9D%BF/&title=标签模板 - MagicBook&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/&title=部署Filebrowser轻量网盘服务 - MagicBook&summary="
           
           >
           
@@ -2612,7 +2664,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
           
-            target="_blank" href="https://t.me/share/url?url=http://example.com/2023/04/24/%E6%A0%87%E7%AD%BE%E6%A8%A1%E6%9D%BF/&text=标签模板 - MagicBook"
+            target="_blank" href="https://t.me/share/url?url=http://example.com/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/&text=部署Filebrowser轻量网盘服务 - MagicBook"
           
           >
           
@@ -2641,16 +2693,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>部署Filebrowser轻量网盘服务</p>
-          <p class='content'>File Browser是什么？
-filebrowser provides a file managing interface within a specified directory and ...</p>
-        </a>
       
-      
-        <a class='next' href='/2023/04/21/Redmi%20k20%E6%95%91%E7%A0%96%EF%BC%9A%E4%BD%BF%E7%94%A8Mi%20Flash%20Tool%E7%BA%BF%E5%88%B7%E6%95%91%E7%A0%96/'>
-          <p class='title'>Redmi k20救砖：使用Mi Flash Tool线刷救砖<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>给Redmi k20升级到magisk26结果卡死在fastboot……怀疑是升级后boot.img损坏，于是尝试下载redmi k20的系统包找出boot.img之后用magisk修补，再用f...</p>
+        <a class='next' href='/2023/04/24/%E6%A0%87%E7%AD%BE%E6%A8%A1%E6%9D%BF/'>
+          <p class='title'>标签模板<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>本文章用于在这里提供一份标签列表。Tag记录在本文章所在的MD文件的front-matter中。
+</p>
         </a>
       
     </div>
@@ -2666,7 +2713,7 @@ filebrowser provides a file managing interface within a specified directory and 
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2023/04/24/%E6%A0%87%E7%AD%BE%E6%A8%A1%E6%9D%BF/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2698,9 +2745,19 @@ filebrowser provides a file managing interface within a specified directory and 
   
 
 
-  <div class="">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        
+    </div>
+  </section>
 
   
 
@@ -3261,7 +3318,7 @@ filebrowser provides a file managing interface within a specified directory and 
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"~MagicNue的魔法书~"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"MagicBook"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/04/24/标签模板/","name":"标签模板"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"MagicBook","url":"http://example.com/","keywords":null,"description":"~MagicNue的魔法书~","author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"~MagicNue的魔法书~"},"publisher":{"@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"标签模板","description":"~MagicNue的魔法书~","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/04/24/%E6%A0%87%E7%AD%BE%E6%A8%A1%E6%9D%BF/"},"author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"MagicBook","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/04/24/%E6%A0%87%E7%AD%BE%E6%A8%A1%E6%9D%BF/","wordCount":0,"datePublished":"2023-04-24T13:43:41.000Z","dateModified":"2023-05-08T14:00:11.210Z","keywords":"Fastboot,Hexo,Code,SoVits,GPT,Claude,Hardware,Software,Xiaomi","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"~MagicNue的魔法书~"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"MagicBook"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/05/19/部署Filebrowser轻量网盘服务/","name":"部署Filebrowser轻量网盘服务"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"MagicBook","url":"http://example.com/","keywords":null,"description":"~MagicNue的魔法书~","author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"~MagicNue的魔法书~"},"publisher":{"@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"部署Filebrowser轻量网盘服务","description":"File Browser是开源的文件管理服务，被用于远程管理不具备图形的界面。同时也可用运输网盘服务。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/"},"author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"MagicBook","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/","wordCount":0,"datePublished":"2023-05-19T13:28:00.000Z","dateModified":"2023-05-21T07:10:17.820Z","keywords":"Code,Filebrowser,Server","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
