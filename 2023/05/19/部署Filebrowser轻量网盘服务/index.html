@@ -25,7 +25,7 @@
   <!-- Custom Files headBegin begin-->
   
   <!-- Custom Files headBegin end-->
-    <link rel="shortcut icon" type='image/x-icon' href="https://gcore.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicon.ico">
+    <link rel="shortcut icon" type='image/x-icon' href="/files/favicon.ico">
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -34,17 +34,17 @@
   <!-- 页面元数据 -->
   <title>部署Filebrowser轻量网盘服务 - MagicBook</title>
   <meta name="keywords" content="Code,Filebrowser,Server,null">
-  <meta desc name="description" content="File Browser是开源的文件管理服务，被用于远程管理不具备图形的界面。同时也可用运输网盘服务。 - MagicNue - MagicBook">
+  <meta desc name="description" content="File Browser是开源的文件管理服务，被用于远程管理不具备图形的界面。同时也可用于轻量网盘服务。本文主要介绍使用Windows部署的过程。 - MagicNue - MagicBook">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="部署Filebrowser轻量网盘服务">
 <meta property="og:url" content="http://example.com/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/index.html">
 <meta property="og:site_name" content="MagicBook">
-<meta property="og:description" content="File Browser是开源的文件管理服务，被用于远程管理不具备图形的界面。同时也可用运输网盘服务。">
+<meta property="og:description" content="File Browser是开源的文件管理服务，被用于远程管理不具备图形的界面。同时也可用于轻量网盘服务。本文主要介绍使用Windows部署的过程。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-05-19T13:28:00.000Z">
-<meta property="article:modified_time" content="2023-05-21T09:06:17.057Z">
+<meta property="article:modified_time" content="2023-05-21T13:09:21.550Z">
 <meta property="article:author" content="MagicNue">
 <meta property="article:tag" content="Code">
 <meta property="article:tag" content="Filebrowser">
@@ -1746,7 +1746,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1684662942871),
+    lastupdate: new Date(1684676715151),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2407,7 +2407,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
       <div id="none" class='cover-wrapper post dock' style="display: none;">
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://raw.githubusercontent.com/magicnue/magicnue.github.io/Hexo/files/background.jpg"></div>
+  <div class='cover-bg lazyload placeholder' data-bg="files/background.jpg"></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2558,29 +2558,38 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p><img src="/files/image.jpg" class="lazyload" data-srcset="/files/image.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h1 id="File-Browser是什么？"><a href="#File-Browser是什么？" class="headerlink" title="File Browser是什么？"></a>File Browser是什么？</h1><blockquote>
+    <p><img src="https://raw.githubusercontent.com/filebrowser/logo/master/banner.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/filebrowser/logo/master/banner.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h2 id="File-Browser是什么？"><a href="#File-Browser是什么？" class="headerlink" title="File Browser是什么？"></a>File Browser是什么？</h2><blockquote>
 <p>filebrowser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users and each user can have its own directory. It can be used as a standalone app. </p>
 <p>FileBrowser在指定目录中提供了一个文件管理界面，可用于上传，删除，预览，重命名和编辑文件。它允许创建多个用户，每个用户都可以有自己的目录。它可以用作独立的应用程序。</p>
 </blockquote>
-<p><a target="_blank" rel="noopener" href="https://filebrowser.org/">Welcome to <em>File Browser’s</em> official documentation.</a><br>File Browser是开源的文件管理服务，被用于远程管理不具备图形的界面。同时也可用运输网盘服务。</p>
-<h1 id="通过Docker-安装"><a href="#通过Docker-安装" class="headerlink" title="通过Docker 安装"></a>通过Docker 安装</h1><p>挂载到&#x2F;mnt&#x2F;md0&#x2F;appdata&#x2F;filebrowser：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker run --name filebrowser -d -v /mnt/md0/appdata/filebrowser/srv:/srv -v /mnt/md0/appdata/filebrowser/filebrowserconfig.json:/etc/config.json -v /mnt/md0/appdata/filebrowser/database.db:/etc/database.db -p 8888:80 filebrowser/filebrowser</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>挂载到&#x2F;mnt&#x2F;md0&#x2F;nas：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --name filebrowser2 -d -v /mnt/md0/nas:/srv -v /mnt/md0/appdata/filebrowser2/filebrowserconfig.json:/etc/config.json -v /mnt/md0/appdata/filebrowser2/database.db:/etc/database.db -p 8888:80 filebrowser/filebrowser</span><br></pre></td></tr></table></figure>
+<p>传送门：<a target="_blank" rel="noopener" href="https://filebrowser.org/">Welcome to <em>File Browser’s</em> official documentation.</a><br>File Browser是开源的文件管理服务，被用于远程管理不具备图形的界面。同时也可用于轻量网盘服务。本文主要使用Windows部署。<br>Filebrowser本身的部署与配置简单轻便，十分适合用于轻度的文件管理与网盘服务。Filebrowser在linux和windows系统都提供了服务端，也可以在Docker部署。本文主要介绍使用Windows部署的过程。</p>
+<h2 id="通过Docker部署；在Linux上部署"><a href="#通过Docker部署；在Linux上部署" class="headerlink" title="通过Docker部署；在Linux上部署"></a>通过Docker部署；在Linux上部署</h2><h3 id="在Linux上，通过Docker部署"><a href="#在Linux上，通过Docker部署" class="headerlink" title="在Linux上，通过Docker部署"></a>在Linux上，通过Docker部署</h3><p>可以使用docker run命令快速地拉取镜像，配置端口，并挂载到想要的想要的目录。</p>
+<ul>
+<li>通常，在docker上除了配置端口外，还需要挂载文件目录、json文件位置与dataase.db文件位置。<br>例如，将文件目录挂载到&#x2F;mnt&#x2F;md0&#x2F;appdata&#x2F;filebrowser：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --name filebrowser -d -v /mnt/md0/appdata/filebrowser/srv:/srv -v /mnt/md0/appdata/filebrowser/filebrowserconfig.json:/etc/config.json -v /mnt/md0/appdata/filebrowser/database.db:/etc/database.db -p 8888:80 filebrowser/filebrowser</span><br></pre></td></tr></table></figure>
+或者，挂载到&#x2F;mnt&#x2F;md0&#x2F;nas：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --name filebrowser2 -d -v /mnt/md0/nas:/srv -v /mnt/md0/appdata/filebrowser2/filebrowserconfig.json:/etc/config.json -v /mnt/md0/appdata/filebrowser2/database.db:/etc/database.db -p 8888:80 filebrowser/filebrowser</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="在Linux上，通过ssh部署"><a href="#在Linux上，通过ssh部署" class="headerlink" title="在Linux上，通过ssh部署"></a>在Linux上，通过ssh部署</h3><p>作为单个可执行文件，只需要输入参数就可以立即启动。尽管如此，作为长期运行的话建议将配置存入json或db文件。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash</span><br><span class="line">filebrowser -r /path/to/your/files</span><br></pre></td></tr></table></figure>
 
-<h1 id="在Linux上，通过ssh安装"><a href="#在Linux上，通过ssh安装" class="headerlink" title="在Linux上，通过ssh安装"></a>在Linux上，通过ssh安装</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash</span><br><span class="line">filebrowser -r /path/to/your/files</span><br></pre></td></tr></table></figure>
-
-
-<h1 id="在windows上部署"><a href="#在windows上部署" class="headerlink" title="在windows上部署"></a>在windows上部署</h1><p>在windows上可以使用命令行便利地部署filebrowser。<br><a target="_blank" rel="noopener" href="https://github.com/filebrowser/filebrowser/releases">Releases · filebrowser&#x2F;filebrowser</a><br>在release页面上下载适用于本机架构的压缩文件后，解压为可执行文件，双击或者在命令行输入<code>./filebrowser</code>来运行。</p>
+<h2 id="在Windows上部署"><a href="#在Windows上部署" class="headerlink" title="在Windows上部署"></a>在Windows上部署</h2><p>在windows上可以使用命令行便利地部署filebrowser。<br><a target="_blank" rel="noopener" href="https://github.com/filebrowser/filebrowser/releases">Releases · filebrowser&#x2F;filebrowser</a><br>在release页面上下载适用于本机架构的压缩文件后，解压为可执行文件，双击或者在命令行输入<code>./filebrowser</code>来运行。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.\filebrowser</span><br><span class="line">Listening on 127.0.0.1:8080</span><br></pre></td></tr></table></figure>
 
 <p>这是一种最简便的部署方法。启用后便可以在本地通过8080端口访问，默认账户与密码均是<code>admin</code>。</p>
 <p>如果有更多需求需要配置，例如更改文件的网盘目录，我们需要对<code>filebrowser</code>进行配置。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.\filebrowser config init</span><br><span class="line"># 初始化filebrowser数据库。如果报错，意味着filebrowser.db已存在。如果运行过filebrowser.exe，那么也会自动创建一个filebrowser.db。</span><br><span class="line">.\filebrowser config set</span><br><span class="line"># 显示配置选项。</span><br><span class="line">.\filebrowser config set --root E:\</span><br><span class="line"># 修改网盘的主目录。在这一例中，将目录设置为E盘根目录。</span><br></pre></td></tr></table></figure>
 
-<p>接下来就可以开始作为网盘&#x2F;网页文件管理器使用了。更常见的是搭配内网穿透作为服务器来使用。</p>
-<h1 id="美化（可选）"><a href="#美化（可选）" class="headerlink" title="美化（可选）"></a>美化（可选）</h1><p>对于自定义部署的filebrowser，在官方文档中有三个位置可以自定义：</p>
+<p>接下来就可以开始作为网盘&#x2F;网页文件管理器使用了。更常见的是映射域名或者搭配内网穿透，作为服务器来使用。</p>
+<h2 id="配置Filebrowser的常用命令"><a href="#配置Filebrowser的常用命令" class="headerlink" title="配置Filebrowser的常用命令"></a>配置Filebrowser的常用命令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">filebrowser config init</span><br><span class="line"># 第一次部署前的数据库初始化</span><br><span class="line">filebrowser config set</span><br><span class="line"># 列出数据库中的配置项目</span><br><span class="line">filebrowser config set --port 8080</span><br><span class="line"># 修改服务端口</span><br></pre></td></tr></table></figure>
+
+<h2 id="在后台启停服务，并配置开机启动"><a href="#在后台启停服务，并配置开机启动" class="headerlink" title="在后台启停服务，并配置开机启动"></a>在后台启停服务，并配置开机启动</h2><p>如果不想看到运行时的命令行界面，可以使用vscript来制作两个简单的启停脚本。</p>
+<ul>
+<li>后台启动脚本：<br>创建一个文本文档，重命名为autorun_filebrowser.vbs。<br>在文档中输入并保存以下内容：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Dim ws</span><br><span class="line">Set ws = Wscript.CreateObject(&quot;Wscript.Shell&quot;)</span><br><span class="line">ws.run &quot;filebrowser.exe&quot;,vbhide</span><br><span class="line">Wscript.quit</span><br></pre></td></tr></table></figure></li>
+<li>后台停止脚本：<br>创建一个文本文档，重命名为autostop_filebrowser.vbs。<br>在文档中输入并保存以下内容：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Dim ws</span><br><span class="line">Set ws = Wscript.CreateObject(&quot;Wscript.Shell&quot;)</span><br><span class="line">ws.run &quot;taskkill /f /im filebrowser.exe&quot;,0</span><br><span class="line">Wscript.quit</span><br></pre></td></tr></table></figure>
+由于使用的是相对路径，这两个文件需要放在filebrowser运行文件夹中。或者可以使用绝对路径，这样这两个脚本就可以放在本机任何地方——除非filebrowser软件被移动。</li>
+<li>配置开机启动：<br>将autorun_filebrowser.vbs创建一个快捷方式并放入：<code>C:\Users\&lt;User&gt;\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup</code>目录中。可以在Win+r中输入<code>shell:startup</code>来快速打开这个文件夹。<br>这样就配置了filebrowser.exe的开机启动服务。可以在任务管理器&gt;启动应用中设置开机自启的开关。</li>
+</ul>
+<h2 id="为Filebrowser配置美化（可选）"><a href="#为Filebrowser配置美化（可选）" class="headerlink" title="为Filebrowser配置美化（可选）"></a>为Filebrowser配置美化（可选）</h2><p>对于自定义部署的filebrowser，在官方文档中有三个位置可以自定义：</p>
 <ul>
 <li><strong>Name（名称）:</strong> which is the instance name that will show up on login and signup pages. This won’t replace the version message in the sidebar.  </li>
 <li><strong>Disable external links（禁用外部链接）:</strong> this will disable any external links (except the ones to this documentation).  </li>
@@ -2609,15 +2618,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>关闭自定义链接：在设置&gt;全局设置&gt;禁止外部链接（帮助文档除外）项勾选后保存。<br>或者，在命令行输入<code>filebrowser config set --branding.disableExternal</code></li>
 </ol>
 <p><em>注意：要使用命令行进行以上修改时，服务需在停止状态。</em></p>
-<h1 id="filebrowser配置的常用命令"><a href="#filebrowser配置的常用命令" class="headerlink" title="filebrowser配置的常用命令"></a>filebrowser配置的常用命令</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">filebrowser config init</span><br><span class="line"># 第一次部署前的数据库初始化</span><br><span class="line">filebrowser config set</span><br><span class="line"># 列出数据库中的配置项目</span><br><span class="line">filebrowser config set --port 8080</span><br><span class="line"># 修改服务端口</span><br></pre></td></tr></table></figure>
-<h1 id="在后台启停服务，并配置开机启动"><a href="#在后台启停服务，并配置开机启动" class="headerlink" title="在后台启停服务，并配置开机启动"></a>在后台启停服务，并配置开机启动</h1><p>如果不想看到运行时的命令行界面，可以使用vscript来制作两个简单的启停脚本。</p>
-<ul>
-<li>后台启动脚本：<br>创建一个文本文档，重命名为autorun_filebrowser.vbs。<br>在文档中输入并保存以下内容：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Dim ws</span><br><span class="line">Set ws = Wscript.CreateObject(&quot;Wscript.Shell&quot;)</span><br><span class="line">ws.run &quot;filebrowser.exe&quot;,vbhide</span><br><span class="line">Wscript.quit</span><br></pre></td></tr></table></figure></li>
-<li>后台停止脚本：<br>创建一个文本文档，重命名为autostop_filebrowser.vbs。<br>在文档中输入并保存以下内容：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Dim ws</span><br><span class="line">Set ws = Wscript.CreateObject(&quot;Wscript.Shell&quot;)</span><br><span class="line">ws.run &quot;taskkill /f /im filebrowser.exe&quot;,0</span><br><span class="line">Wscript.quit</span><br></pre></td></tr></table></figure>
-由于使用的是相对路径，这两个文件需要放在filebrowser运行文件夹中。或者可以使用绝对路径，这样这两个脚本就可以放在本机任何地方——除非filebrowser软件被移动。</li>
-<li>配置开机启动：<br>将autorun_filebrowser.vbs创建一个快捷方式并放入：<code>C:\Users\&lt;User&gt;\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup</code>目录中。可以在Win+r中输入<code>shell:startup</code>来快速打开这个文件夹。<br>这样就配置了filebrowser.exe的开机启动服务。可以在任务管理器&gt;启动应用中设置开机自启的开关。</li>
-</ul>
-<h1 id="为filebrowser配置内网穿透"><a href="#为filebrowser配置内网穿透" class="headerlink" title="为filebrowser配置内网穿透"></a>为filebrowser配置内网穿透</h1><p>filebrowser服务端默认在http开放8080端口，在https开放<br>传送门：[[使用Cerbot申请Let’s encrypt证书，并部署在filebrowser服务器]]</p>
+<h2 id="为Filebrowser配置内网穿透（可选）"><a href="#为Filebrowser配置内网穿透（可选）" class="headerlink" title="为Filebrowser配置内网穿透（可选）"></a>为Filebrowser配置内网穿透（可选）</h2><p>filebrowser服务端默认在http开放8080端口，在https开放<br>传送门：<a href="%E4%BD%BF%E7%94%A8Cerbot%E7%94%B3%E8%AF%B7Let's%20encrypt%E8%AF%81%E4%B9%A6%EF%BC%8C%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8filebrowser%E6%9C%8D%E5%8A%A1%E5%99%A8.md">使用Cerbot申请Let’s encrypt证书，并部署在filebrowser服务器</a></p>
+<h2 id="收尾"><a href="#收尾" class="headerlink" title="收尾"></a>收尾</h2><blockquote>
+<p>好像没有什么好说的？放一个Filebrowser的官方文档吧。<br>传送门：<a target="_blank" rel="noopener" href="https://filebrowser.org/">Welcome - File Browser</a></p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/filebrowser/logo/master/banner.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/filebrowser/logo/master/banner.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 
   </div>
   
@@ -2642,7 +2647,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-05-21T17:06:17+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-05-21T21:09:21+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2023年5月21日</p>
@@ -2735,6 +2740,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
+        <a class='prev' href='/2023/05/20/%E4%BD%BF%E7%94%A8Cerbot%E7%94%B3%E8%AF%B7Let's%20encrypt%E8%AF%81%E4%B9%A6%EF%BC%8C%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8filebrowser%E6%9C%8D%E5%8A%A1%E5%99%A8/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>使用Cerbot申请Let's encrypt证书，并部署在filebrowser服务器</p>
+          <p class='content'>使用Cerbot申请Let’s encrypt证书Let’s encrypt证书服务是使用最广泛的免费证书服务之一。对于个人势开发者而言是经济实惠的选择。本节记录了使用Cerbot申请Let’s...</p>
+        </a>
+      
       
         <a class='next' href='/2023/04/24/%E6%A0%87%E7%AD%BE%E6%A8%A1%E6%9D%BF/'>
           <p class='title'>标签模板<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
@@ -2797,7 +2807,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#File-Browser%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">File Browser是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%9A%E8%BF%87Docker%E9%83%A8%E7%BD%B2%EF%BC%9B%E5%9C%A8Linux%E4%B8%8A%E9%83%A8%E7%BD%B2"><span class="toc-text">通过Docker部署；在Linux上部署</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8Linux%E4%B8%8A%EF%BC%8C%E9%80%9A%E8%BF%87Docker%E9%83%A8%E7%BD%B2"><span class="toc-text">在Linux上，通过Docker部署</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8Linux%E4%B8%8A%EF%BC%8C%E9%80%9A%E8%BF%87ssh%E9%83%A8%E7%BD%B2"><span class="toc-text">在Linux上，通过ssh部署</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8Windows%E4%B8%8A%E9%83%A8%E7%BD%B2"><span class="toc-text">在Windows上部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEFilebrowser%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">配置Filebrowser的常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8%E5%90%8E%E5%8F%B0%E5%90%AF%E5%81%9C%E6%9C%8D%E5%8A%A1%EF%BC%8C%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8"><span class="toc-text">在后台启停服务，并配置开机启动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BAFilebrowser%E9%85%8D%E7%BD%AE%E7%BE%8E%E5%8C%96%EF%BC%88%E5%8F%AF%E9%80%89%EF%BC%89"><span class="toc-text">为Filebrowser配置美化（可选）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BAFilebrowser%E9%85%8D%E7%BD%AE%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%EF%BC%88%E5%8F%AF%E9%80%89%EF%BC%89"><span class="toc-text">为Filebrowser配置内网穿透（可选）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%B6%E5%B0%BE"><span class="toc-text">收尾</span></a></li></ol>
     </div>
   </section>
 
@@ -3360,7 +3370,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"~MagicNue的魔法书~"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"MagicBook"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/05/19/部署Filebrowser轻量网盘服务/","name":"部署Filebrowser轻量网盘服务"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"MagicBook","url":"http://example.com/","keywords":null,"description":"~MagicNue的魔法书~","author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"~MagicNue的魔法书~"},"publisher":{"@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"部署Filebrowser轻量网盘服务","description":"File Browser是开源的文件管理服务，被用于远程管理不具备图形的界面。同时也可用运输网盘服务。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/"},"author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"MagicBook","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/","wordCount":0,"datePublished":"2023-05-19T13:28:00.000Z","dateModified":"2023-05-21T09:06:17.057Z","keywords":"Code,Filebrowser,Server","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"~MagicNue的魔法书~"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"MagicBook"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/05/19/部署Filebrowser轻量网盘服务/","name":"部署Filebrowser轻量网盘服务"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"MagicBook","url":"http://example.com/","keywords":null,"description":"~MagicNue的魔法书~","author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"~MagicNue的魔法书~"},"publisher":{"@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"部署Filebrowser轻量网盘服务","description":"File Browser是开源的文件管理服务，被用于远程管理不具备图形的界面。同时也可用于轻量网盘服务。本文主要介绍使用Windows部署的过程。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/"},"author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"MagicBook","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/","wordCount":0,"datePublished":"2023-05-19T13:28:00.000Z","dateModified":"2023-05-21T13:09:21.550Z","keywords":"Code,Filebrowser,Server","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
