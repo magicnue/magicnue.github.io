@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/2023/09/05/android redmi k20救砖：使用payload_dumper提取boot img并修补后注入boot分区/"/>
+  <link rel="canonical" href="http://example.com/2023/05/25/记录一次完整的新电脑系统配置过程/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -27,29 +27,27 @@
   <!-- Custom Files headBegin end-->
   <!-- front-matter head_begin begin -->
   <!-- front-matter head_begin end -->
-    <link rel="shortcut icon" type='image/x-icon' href="/files/favicon.ico">
+    <link rel="shortcut icon" type='image/x-icon' href="/images/favicon.ico">
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Redmi k20救砖：使用payload_dumper提取boot.img并修补后注入boot分区 - MagicBook</title>
-  <meta name="keywords" content="Redmi,Fastboot,null">
-  <meta desc name="description" content="尝试下载redmi k20的系统包找出boot.img之后用magisk修补，再用fastboot刷入boot分区。 - MagicNue - MagicBook">
+  <title>记录一次完整的新电脑系统配置过程 - MagicBook</title>
+  <meta name="keywords" content="null">
+  <meta desc name="description" content="本次记录了新系统配置过程。 - MagicNue - MagicBook">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Redmi k20救砖：使用payload_dumper提取boot.img并修补后注入boot分区">
-<meta property="og:url" content="http://example.com/2023/09/05/Android%20Redmi%20k20%E6%95%91%E7%A0%96%EF%BC%9A%E4%BD%BF%E7%94%A8payload_dumper%E6%8F%90%E5%8F%96boot%20img%E5%B9%B6%E4%BF%AE%E8%A1%A5%E5%90%8E%E6%B3%A8%E5%85%A5boot%E5%88%86%E5%8C%BA/index.html">
+<meta property="og:title" content="记录一次完整的新电脑系统配置过程">
+<meta property="og:url" content="http://example.com/2023/05/25/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%AE%8C%E6%95%B4%E7%9A%84%E6%96%B0%E7%94%B5%E8%84%91%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/index.html">
 <meta property="og:site_name" content="MagicBook">
-<meta property="og:description" content="尝试下载redmi k20的系统包找出boot.img之后用magisk修补，再用fastboot刷入boot分区。">
+<meta property="og:description" content="本次记录了新系统配置过程。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-09-05T08:28:20.125Z">
-<meta property="article:modified_time" content="2023-09-05T08:28:21.345Z">
+<meta property="article:published_time" content="2023-05-25T05:28:00.000Z">
+<meta property="article:modified_time" content="2023-09-23T06:52:05.000Z">
 <meta property="article:author" content="MagicNue">
-<meta property="article:tag" content="Redmi">
-<meta property="article:tag" content="Fastboot">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -1747,7 +1745,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1693916017469),
+    lastupdate: new Date(1695521045224),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2192,7 +2190,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='/Obsidian%20File/favicon.ico'/>
+            <img no-lazy class='logo' src='/images/favicon.ico'/>
           
           
           
@@ -2412,7 +2410,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
       <div id="none" class='cover-wrapper post dock' style="display: none;">
         
-  <div class='cover-bg lazyload placeholder' data-bg="Obsidian%20File/background.jpg"></div>
+  <div class='cover-bg lazyload placeholder' data-bg="/images/background.jpg"></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2433,49 +2431,49 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-home">
-              <img src='Obsidian%20File/icon_1f5c3.svg'><p>首页</p>
+              <img src='/images/icon_1f5c3.svg'><p>首页</p>
             </a>
           
             <a href="/archives/"
               
               
               active-action="action-archives">
-              <img src='Obsidian%20File/icon_1f4f0.svg'><p>时间线</p>
+              <img src='/images/icon_1f4f0.svg'><p>时间线</p>
             </a>
           
             <a href="/tags/"
               
               
               active-action="action-tags">
-              <img src='Obsidian%20File/icon_1f4d1.svg'><p>标签</p>
+              <img src='/images/icon_1f4d1.svg'><p>标签</p>
             </a>
           
             <a href="/faqs/"
               
               
               active-action="action-faqs">
-              <img src='Obsidian%20File/icon_1f516.svg'><p>帮助</p>
+              <img src='/images/icon_1f516.svg'><p>帮助</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://pan.magicnue.top/"
               
               
               active-action="action-https:panmagicnuetop">
-              <img src='Obsidian%20File/icon_2601.svg'><p>图书馆</p>
+              <img src='/images/icon_2601.svg'><p>图书馆</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://github.com/magicnue/magicnue.github.io/"
               
               
               active-action="action-https:githubcommagicnuemagicnuegithubio">
-              <img src='Obsidian%20File/icon_1f4ce.svg'><p>源码</p>
+              <img src='/images/icon_1f4ce.svg'><p>源码</p>
             </a>
           
             <a href="/about/"
               
               
               active-action="action-about">
-              <img src='Obsidian%20File/icon_2755.svg'><p>关于</p>
+              <img src='/images/icon_2755.svg'><p>关于</p>
             </a>
           
         
@@ -2495,7 +2493,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/05/Android Redmi k20救砖：使用payload_dumper提取boot img并修补后注入boot分区/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/25/记录一次完整的新电脑系统配置过程/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="MagicBook">
   </span>
@@ -2516,7 +2514,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        Redmi k20救砖：使用payload_dumper提取boot.img并修补后注入boot分区
+        记录一次完整的新电脑系统配置过程
       </h1>
       <div class='new-meta-box'>
         
@@ -2537,10 +2535,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-09-05T08:28:20+00:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-05-25T05:28:00+00:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2023年9月5日</p>
+    <p>发布于：2023年5月25日</p>
   </a>
 </div>
 
@@ -2563,23 +2561,31 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>给Redmi k20升级到magisk26结果卡死在fastboot……<br>怀疑是升级后boot.img损坏，于是尝试下载redmi k20的系统包找出boot.img之后用magisk修补，再用fastboot刷入boot分区。<br>结局是依然卡在fastboot……最后只能用MI Flash Tool线刷恢复。<br><img src="/Obsidian%20File/image.jpg" class="lazyload" data-srcset="/Obsidian%20File/image.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<hr>
-<h2 id="1-提取boot-img"><a href="#1-提取boot-img" class="headerlink" title="1 提取boot.img"></a>1 提取boot.img</h2><p>在系统分区网站寻找对应的系统线刷包（必须是线刷包），下载并提取出boot.img。</p>
-<p>或者，如果当前安装的系统版本尚未提供先刷版本，可以从卡刷版中解压出payload文件、并使用payload_dumper.exe快速提取。</p>
-<p><strong>payload-dumper-go是一个可以提取boot.img的提取器，用Go语言编写。</strong></p>
-<p>【发布在Github的payload-dumpere-go链接】<a target="_blank" rel="noopener" href="https://github.com/ssut/payload-dumper-go">GitHub - ssut&#x2F;payload-dumper-go</a></p>
-<p>解压后，直接将payload.bin文件拖拽到payload-dumper-go.exe来开始解压。</p>
-<p>在boot.img文件提取完成后，可以ctrl+c取消其他文件的提取。</p>
-<h2 id="2-使用Magisk修补patch-img"><a href="#2-使用Magisk修补patch-img" class="headerlink" title="2 使用Magisk修补patch.img"></a>2 使用Magisk修补patch.img</h2><p>打开Magisk APP，点击Magisk的安装&gt;方式：选择并修补一个文件&gt;选择提取出的boot.img文件&gt;开始，将会生成带有magisk_patched字样的img文件夹，</p>
-<h2 id="3-使用ADB-服务刷入修补后的boot分区"><a href="#3-使用ADB-服务刷入修补后的boot分区" class="headerlink" title="3 使用ADB 服务刷入修补后的boot分区"></a>3 使用ADB 服务刷入修补后的boot分区</h2><p>【Google给出的SDK平台工具】<a target="_blank" rel="noopener" href="https://developer.android.com/tools/releases/platform-tools">SDK Platform Tools release</a></p>
-<p>点击 SDK Platform-Tools for Windows 来下载适用于Win版本的adb服务。</p>
-<p>在解压全部后，将cmd.exe拖入文件夹并打开，或者右键空白处使用终端打开。</p>
-<p>使用 fastboot devices 命令来查询手机是否已连接服务。</p>
-<p>使用  fastboot flash boot magisk_patch.img 来刷入分区。*注意：最后的文件需要绝对位置信息。你可以直接将文件拖入cmd窗口来自动输入。</p>
-<p>*注意：platform-tools文件夹，以及img文件所在的文件路径均不能存在中文。必须使用英文&#x2F;字母&#x2F;下划线，否则会报错。</p>
-<p>在确认完成后，使用fastboot reboot 来重启手机。在手机重启时，你可以断开与电脑的连接。</p>
-<h2 id="4-最后依然卡在fastboot米兔界面XD"><a href="#4-最后依然卡在fastboot米兔界面XD" class="headerlink" title="4 最后依然卡在fastboot米兔界面XD"></a>4 最后依然卡在fastboot米兔界面XD</h2><p>只好重新线刷恢复，当然资料最后也丢失掉（</p>
+    <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>显然win11的优化依旧不适用于配置较低的笔记本。决定在台式机上保留win11，笔记本上还是换回win10……本次记录了新系统配置过程。</p>
+<h2 id="预准备"><a href="#预准备" class="headerlink" title="预准备"></a>预准备</h2><ul>
+<li>配备了PE的优盘。</li>
+<li>需要安装的系统镜像，存入U盘。</li>
+<li>需要Locosend或者类似的文件传输工具，存入U盘。</li>
+<li>一台电脑。将USB启动配置为第一顺序。</li>
+</ul>
+<p>安装过程就直接跳过了……直接来到配置环节。</p>
+<h3 id="文件的传输"><a href="#文件的传输" class="headerlink" title="文件的传输"></a>文件的传输</h3><p>下载Via浏览器和LocalSend——分别是轻量浏览器与文件传输软件。然后就可以使用网盘服务器和LocalSend来进行文件传输服务。</p>
+<ul>
+<li>局域网内的文件和文本使用LocalSend传输；</li>
+<li>无法局域网内传输时，使用网盘服务器传输。<br>在最开始需要访问网络时，或许不得不使用系统内置的浏览器与文件管理。最简单干脆的方法或许是使用数据线传输和adb安装。</li>
+</ul>
+<h3 id="基础浏览器"><a href="#基础浏览器" class="headerlink" title="基础浏览器"></a>基础浏览器</h3><ul>
+<li>通常使用Firefox作为浏览器使用。警告：不要选择内陆特供版本。</li>
+<li>扩展模块：隐私獾；Bitwaeden；Vimiun C；Tampermonkey；Dark Reader；SwitchOmega；uBlockOrigin。</li>
+</ul>
+<h2 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h2><p>显然，新系统安装完成后的第一件事是激活——然后静置，等待联网后的系统自行安装驱动和系统更新。这一过程还会数次要求重启系统。</p>
+<h3 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 以管理员方式启动cmd</span><br><span class="line"># 使用`03k.org`提供的系统激活服务进行激活</span><br><span class="line">slmgr /skms kms.03k.org</span><br><span class="line">slmgr /ato</span><br></pre></td></tr></table></figure>
+<h3 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h3><p>如果在设备管理器中存在问号的设备，意味着未能正确识别或者安装设备驱动。<br>此时需要前往设备官网自行下载安装驱动。</p>
+<h2 id="后置应用"><a href="#后置应用" class="headerlink" title="后置应用"></a>后置应用</h2><h3 id="基础应用"><a href="#基础应用" class="headerlink" title="基础应用"></a>基础应用</h3><ul>
+<li>使用Twinkle Tray作为显示器的亮度管理工具。</li>
+<li>使用Resilio Sync作为文件同步工具。</li>
+<li>使用Clash作为代理工具。</li>
+</ul>
 
   </div>
   
@@ -2604,10 +2610,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-05T08:28:21+00:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-23T06:52:05+00:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年9月5日</p>
+    <p>更新于：2023年9月23日</p>
   </a>
 </div>
 
@@ -2615,10 +2621,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
-  
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Redmi/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Redmi</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Fastboot/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Fastboot</p></a></div>
-  <span hidden itemprop="keywords">Redmi Fastboot</span>
-
 
         
       
@@ -2630,7 +2632,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/09/05/Android%20Redmi%20k20%E6%95%91%E7%A0%96%EF%BC%9A%E4%BD%BF%E7%94%A8payload_dumper%E6%8F%90%E5%8F%96boot%20img%E5%B9%B6%E4%BF%AE%E8%A1%A5%E5%90%8E%E6%B3%A8%E5%85%A5boot%E5%88%86%E5%8C%BA/&title=Redmi k20救砖：使用payload_dumper提取boot.img并修补后注入boot分区 - MagicBook&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/05/25/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%AE%8C%E6%95%B4%E7%9A%84%E6%96%B0%E7%94%B5%E8%84%91%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/&title=记录一次完整的新电脑系统配置过程 - MagicBook&summary="
           
           >
           
@@ -2642,7 +2644,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/09/05/Android%20Redmi%20k20%E6%95%91%E7%A0%96%EF%BC%9A%E4%BD%BF%E7%94%A8payload_dumper%E6%8F%90%E5%8F%96boot%20img%E5%B9%B6%E4%BF%AE%E8%A1%A5%E5%90%8E%E6%B3%A8%E5%85%A5boot%E5%88%86%E5%8C%BA/&title=Redmi k20救砖：使用payload_dumper提取boot.img并修补后注入boot分区 - MagicBook&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/05/25/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%AE%8C%E6%95%B4%E7%9A%84%E6%96%B0%E7%94%B5%E8%84%91%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/&title=记录一次完整的新电脑系统配置过程 - MagicBook&summary="
           
           >
           
@@ -2654,7 +2656,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/09/05/Android%20Redmi%20k20%E6%95%91%E7%A0%96%EF%BC%9A%E4%BD%BF%E7%94%A8payload_dumper%E6%8F%90%E5%8F%96boot%20img%E5%B9%B6%E4%BF%AE%E8%A1%A5%E5%90%8E%E6%B3%A8%E5%85%A5boot%E5%88%86%E5%8C%BA/&title=Redmi k20救砖：使用payload_dumper提取boot.img并修补后注入boot分区 - MagicBook&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/05/25/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%AE%8C%E6%95%B4%E7%9A%84%E6%96%B0%E7%94%B5%E8%84%91%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/&title=记录一次完整的新电脑系统配置过程 - MagicBook&summary="
           
           >
           
@@ -2668,7 +2670,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
           
-            target="_blank" href="https://t.me/share/url?url=http://example.com/2023/09/05/Android%20Redmi%20k20%E6%95%91%E7%A0%96%EF%BC%9A%E4%BD%BF%E7%94%A8payload_dumper%E6%8F%90%E5%8F%96boot%20img%E5%B9%B6%E4%BF%AE%E8%A1%A5%E5%90%8E%E6%B3%A8%E5%85%A5boot%E5%88%86%E5%8C%BA/&text=Redmi k20救砖：使用payload_dumper提取boot.img并修补后注入boot分区 - MagicBook"
+            target="_blank" href="https://t.me/share/url?url=http://example.com/2023/05/25/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%AE%8C%E6%95%B4%E7%9A%84%E6%96%B0%E7%94%B5%E8%84%91%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/&text=记录一次完整的新电脑系统配置过程 - MagicBook"
           
           >
           
@@ -2698,9 +2700,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class="prev-next">
       
       
-        <a class='next' href='/2023/09/05/Android%20Redmi%20k20%E6%95%91%E7%A0%96%EF%BC%9A%E4%BD%BF%E7%94%A8Mi%20Flash%20Tool%E7%BA%BF%E5%88%B7%E6%95%91%E7%A0%96/'>
-          <p class='title'>Redmi k20救砖：使用Mi Flash Tool线刷救砖<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>给Redmi k20升级到magisk26结果卡死在fastboot……怀疑是升级后boot.img损坏，于是尝试下载redmi k20的系统包找出boot.img之后用magisk修补，再用f...</p>
+        <a class='next' href='/2023/05/23/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%AE%8C%E6%95%B4%E7%9A%84%E6%96%B0%E6%89%8B%E6%9C%BA%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/'>
+          <p class='title'>记录一次完整的新手机系统配置过程<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>前言在一次系统变砖之后成功救砖，代价是系统数据全部丢失。本次记录了新系统的配置过程。
+预处理需要的硬件：
+
+一台能够访问网络的电脑
+一部功能正常的手机，已解锁bl锁。
+良好的网络环境，或者使用科...</p>
         </a>
       
     </div>
@@ -2716,7 +2723,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2023/09/05/Android%20Redmi%20k20%E6%95%91%E7%A0%96%EF%BC%9A%E4%BD%BF%E7%94%A8payload_dumper%E6%8F%90%E5%8F%96boot%20img%E5%B9%B6%E4%BF%AE%E8%A1%A5%E5%90%8E%E6%B3%A8%E5%85%A5boot%E5%88%86%E5%8C%BA/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2023/05/25/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%AE%8C%E6%95%B4%E7%9A%84%E6%96%B0%E7%94%B5%E8%84%91%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2758,7 +2765,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%8F%90%E5%8F%96boot-img"><span class="toc-text">1 提取boot.img</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%BD%BF%E7%94%A8Magisk%E4%BF%AE%E8%A1%A5patch-img"><span class="toc-text">2 使用Magisk修补patch.img</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E4%BD%BF%E7%94%A8ADB-%E6%9C%8D%E5%8A%A1%E5%88%B7%E5%85%A5%E4%BF%AE%E8%A1%A5%E5%90%8E%E7%9A%84boot%E5%88%86%E5%8C%BA"><span class="toc-text">3 使用ADB 服务刷入修补后的boot分区</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%9C%80%E5%90%8E%E4%BE%9D%E7%84%B6%E5%8D%A1%E5%9C%A8fastboot%E7%B1%B3%E5%85%94%E7%95%8C%E9%9D%A2XD"><span class="toc-text">4 最后依然卡在fastboot米兔界面XD</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%84%E5%87%86%E5%A4%87"><span class="toc-text">预准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%9A%84%E4%BC%A0%E8%BE%93"><span class="toc-text">文件的传输</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E6%B5%8F%E8%A7%88%E5%99%A8"><span class="toc-text">基础浏览器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE"><span class="toc-text">基础配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BF%80%E6%B4%BB"><span class="toc-text">激活</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A9%B1%E5%8A%A8"><span class="toc-text">驱动</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E7%BD%AE%E5%BA%94%E7%94%A8"><span class="toc-text">后置应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8"><span class="toc-text">基础应用</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -3321,7 +3328,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"~MagicNue的魔法书~"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"MagicBook"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/09/05/Android Redmi k20救砖：使用payload_dumper提取boot img并修补后注入boot分区/","name":"Redmi k20救砖：使用payload_dumper提取boot.img并修补后注入boot分区"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"MagicBook","url":"http://example.com/","keywords":null,"description":"~MagicNue的魔法书~","author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"~MagicNue的魔法书~"},"publisher":{"@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Redmi k20救砖：使用payload_dumper提取boot.img并修补后注入boot分区","description":"尝试下载redmi k20的系统包找出boot.img之后用magisk修补，再用fastboot刷入boot分区。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/09/05/Android%20Redmi%20k20%E6%95%91%E7%A0%96%EF%BC%9A%E4%BD%BF%E7%94%A8payload_dumper%E6%8F%90%E5%8F%96boot%20img%E5%B9%B6%E4%BF%AE%E8%A1%A5%E5%90%8E%E6%B3%A8%E5%85%A5boot%E5%88%86%E5%8C%BA/"},"author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"MagicBook","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/09/05/Android%20Redmi%20k20%E6%95%91%E7%A0%96%EF%BC%9A%E4%BD%BF%E7%94%A8payload_dumper%E6%8F%90%E5%8F%96boot%20img%E5%B9%B6%E4%BF%AE%E8%A1%A5%E5%90%8E%E6%B3%A8%E5%85%A5boot%E5%88%86%E5%8C%BA/","wordCount":0,"datePublished":"2023-09-05T08:28:20.125Z","dateModified":"2023-09-05T08:28:21.345Z","keywords":"Redmi,Fastboot","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"~MagicNue的魔法书~"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"MagicBook"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/05/25/记录一次完整的新电脑系统配置过程/","name":"记录一次完整的新电脑系统配置过程"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"MagicBook","url":"http://example.com/","keywords":null,"description":"~MagicNue的魔法书~","author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"~MagicNue的魔法书~"},"publisher":{"@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"记录一次完整的新电脑系统配置过程","description":"本次记录了新系统配置过程。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/05/25/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%AE%8C%E6%95%B4%E7%9A%84%E6%96%B0%E7%94%B5%E8%84%91%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/"},"author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"MagicBook","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/05/25/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%AE%8C%E6%95%B4%E7%9A%84%E6%96%B0%E7%94%B5%E8%84%91%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/","wordCount":0,"datePublished":"2023-05-25T05:28:00.000Z","dateModified":"2023-09-23T06:52:05.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

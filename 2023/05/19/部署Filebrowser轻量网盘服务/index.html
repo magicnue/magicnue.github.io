@@ -27,7 +27,7 @@
   <!-- Custom Files headBegin end-->
   <!-- front-matter head_begin begin -->
   <!-- front-matter head_begin end -->
-    <link rel="shortcut icon" type='image/x-icon' href="/files/favicon.ico">
+    <link rel="shortcut icon" type='image/x-icon' href="/images/favicon.ico">
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -46,7 +46,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-05-19T13:28:00.000Z">
-<meta property="article:modified_time" content="2023-09-05T08:28:21.921Z">
+<meta property="article:modified_time" content="2023-09-23T06:19:35.404Z">
 <meta property="article:author" content="MagicNue">
 <meta property="article:tag" content="Code">
 <meta property="article:tag" content="Filebrowser">
@@ -1748,7 +1748,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1693916017469),
+    lastupdate: new Date(1695521045224),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2193,7 +2193,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='/Obsidian%20File/favicon.ico'/>
+            <img no-lazy class='logo' src='/images/favicon.ico'/>
           
           
           
@@ -2413,7 +2413,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
       <div id="none" class='cover-wrapper post dock' style="display: none;">
         
-  <div class='cover-bg lazyload placeholder' data-bg="Obsidian%20File/background.jpg"></div>
+  <div class='cover-bg lazyload placeholder' data-bg="/images/background.jpg"></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2434,49 +2434,49 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-home">
-              <img src='Obsidian%20File/icon_1f5c3.svg'><p>首页</p>
+              <img src='/images/icon_1f5c3.svg'><p>首页</p>
             </a>
           
             <a href="/archives/"
               
               
               active-action="action-archives">
-              <img src='Obsidian%20File/icon_1f4f0.svg'><p>时间线</p>
+              <img src='/images/icon_1f4f0.svg'><p>时间线</p>
             </a>
           
             <a href="/tags/"
               
               
               active-action="action-tags">
-              <img src='Obsidian%20File/icon_1f4d1.svg'><p>标签</p>
+              <img src='/images/icon_1f4d1.svg'><p>标签</p>
             </a>
           
             <a href="/faqs/"
               
               
               active-action="action-faqs">
-              <img src='Obsidian%20File/icon_1f516.svg'><p>帮助</p>
+              <img src='/images/icon_1f516.svg'><p>帮助</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://pan.magicnue.top/"
               
               
               active-action="action-https:panmagicnuetop">
-              <img src='Obsidian%20File/icon_2601.svg'><p>图书馆</p>
+              <img src='/images/icon_2601.svg'><p>图书馆</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://github.com/magicnue/magicnue.github.io/"
               
               
               active-action="action-https:githubcommagicnuemagicnuegithubio">
-              <img src='Obsidian%20File/icon_1f4ce.svg'><p>源码</p>
+              <img src='/images/icon_1f4ce.svg'><p>源码</p>
             </a>
           
             <a href="/about/"
               
               
               active-action="action-about">
-              <img src='Obsidian%20File/icon_2755.svg'><p>关于</p>
+              <img src='/images/icon_2755.svg'><p>关于</p>
             </a>
           
         
@@ -2593,6 +2593,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>随后就可以使用https协议访问了。</p>
 <pre><code>注意：启用https协议后，http将被关闭，无法访问。
 </code></pre>
+<ul>
+<li>如果使用<code>.json</code>文件出错的话，可以直接添加环境变量来配置。例如：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-e FB_BASEURL=&quot;/filebrowser&quot;</span><br></pre></td></tr></table></figure></li>
+</ul>
 <h3 id="在Linux上，通过ssh部署"><a href="#在Linux上，通过ssh部署" class="headerlink" title="在Linux上，通过ssh部署"></a>在Linux上，通过ssh部署</h3><p>作为单个可执行文件，只需要输入参数就可以立即启动。尽管如此，作为长期运行的话建议将配置存入json或db文件。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash</span><br><span class="line">filebrowser -r /path/to/your/files</span><br></pre></td></tr></table></figure>
 
@@ -2671,10 +2674,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-05T08:28:21+00:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-23T06:19:35+00:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年9月5日</p>
+    <p>更新于：2023年9月23日</p>
   </a>
 </div>
 
@@ -2764,15 +2767,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/05/20/Docker%20%E4%BD%BF%E7%94%A8Cerbot%E7%94%B3%E8%AF%B7Lets%20encrypt%E8%AF%81%E4%B9%A6%EF%BC%8C%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8filebrowser%E6%9C%8D%E5%8A%A1%E5%99%A8/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Docker 使用Cerbot申请Lets encrypt证书，并部署在filebrowser服务器.md</p>
+        <a class='prev' href='/2023/05/20/Docker%20%E4%BD%BF%E7%94%A8Cerbot%E7%94%B3%E8%AF%B7Let's%20encrypt%E8%AF%81%E4%B9%A6%EF%BC%8C%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8filebrowser%E6%9C%8D%E5%8A%A1%E5%99%A8/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>使用Cerbot申请Let's encrypt证书，并部署在filebrowser服务器</p>
           <p class='content'>使用Cerbot申请Let’s encrypt证书Let’s encrypt证书服务是使用最广泛的免费证书服务之一。对于个人势开发者而言是经济实惠的选择。本节记录了使用Cerbot申请Let’s...</p>
         </a>
       
       
-        <a class='next' href='/2023/04/21/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E4%B8%96%E7%95%8C%EF%BC%81/'>
-          <p class='title'>你好，世界！<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>这是我在Hexo创建的第一篇文章！我把部署的过程简要地记录在这里，以便之后可以回顾我的Blog设计。我使用Hexo框架来建站，并且部署在Github Page上的博客，使用Volantis作为主...</p>
+        <a class='next' href='/2023/04/26/Android%20Redmi%20k20%E6%95%91%E7%A0%96%EF%BC%9A%E4%BD%BF%E7%94%A8Mi%20Flash%20Tool%E7%BA%BF%E5%88%B7%E6%95%91%E7%A0%96/'>
+          <p class='title'>Redmi k20救砖：使用Mi Flash Tool线刷救砖<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>给Redmi k20升级到magisk26结果卡死在fastboot……怀疑是升级后boot.img损坏，于是尝试下载redmi k20的系统包找出boot.img之后用magisk修补，再用f...</p>
         </a>
       
     </div>
@@ -3393,7 +3396,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"~MagicNue的魔法书~"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"MagicBook"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/05/19/部署Filebrowser轻量网盘服务/","name":"部署Filebrowser轻量网盘服务"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"MagicBook","url":"http://example.com/","keywords":null,"description":"~MagicNue的魔法书~","author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"~MagicNue的魔法书~"},"publisher":{"@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"部署Filebrowser轻量网盘服务","description":"File Browser是开源的文件管理服务，被用于远程管理不具备图形的界面。同时也可用于轻量网盘服务。本文主要介绍使用Windows部署的过程。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/"},"author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"MagicBook","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/","wordCount":0,"datePublished":"2023-05-19T13:28:00.000Z","dateModified":"2023-09-05T08:28:21.921Z","keywords":"Code,Filebrowser,Server","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"~MagicNue的魔法书~"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"MagicBook"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/05/19/部署Filebrowser轻量网盘服务/","name":"部署Filebrowser轻量网盘服务"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"MagicBook","url":"http://example.com/","keywords":null,"description":"~MagicNue的魔法书~","author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"~MagicNue的魔法书~"},"publisher":{"@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"部署Filebrowser轻量网盘服务","description":"File Browser是开源的文件管理服务，被用于远程管理不具备图形的界面。同时也可用于轻量网盘服务。本文主要介绍使用Windows部署的过程。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/"},"author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"MagicBook","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/05/19/%E9%83%A8%E7%BD%B2Filebrowser%E8%BD%BB%E9%87%8F%E7%BD%91%E7%9B%98%E6%9C%8D%E5%8A%A1/","wordCount":0,"datePublished":"2023-05-19T13:28:00.000Z","dateModified":"2023-09-23T06:19:35.404Z","keywords":"Code,Filebrowser,Server","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
