@@ -34,20 +34,23 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>MagicBook</title>
-  <meta name="keywords" content="null">
-  <meta desc name="description" content="~MagicNue的魔法书~ - MagicNue - MagicBook">
+  <title>Crontab：自动计划任务 - MagicBook</title>
+  <meta name="keywords" content="Code,Server,Linux,null">
+  <meta desc name="description" content="Linux _crontab_ 是用来定期执行程序的命令。想要服务器定时任务的话，可以用它实现。 - MagicNue - MagicBook">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="MagicBook">
+<meta property="og:title" content="Crontab：自动计划任务">
 <meta property="og:url" content="http://example.com/2023/09/26/Crontab%EF%BC%9A%E8%87%AA%E5%8A%A8%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/index.html">
 <meta property="og:site_name" content="MagicBook">
-<meta property="og:description" content="cron是一款类Unix的操作系统下的基于时间的任务管理系统。  什么是crontab？Linux crontab 是用来定期执行程序的命令。想要服务器定时任务的话，可以用它实现。 用法编辑corontab的自动任务： 1corntab -e 查询corontab的自动任务： 1crontab -l  示例定期自动同步并部署博客文件： 12340 1 * * * sudo rsync -a &amp;#">
+<meta property="og:description" content="Linux _crontab_ 是用来定期执行程序的命令。想要服务器定时任务的话，可以用它实现。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-09-26T13:53:00.000Z">
-<meta property="article:modified_time" content="2023-09-26T13:53:26.000Z">
+<meta property="article:modified_time" content="2023-09-26T13:53:43.000Z">
 <meta property="article:author" content="MagicNue">
+<meta property="article:tag" content="Code">
+<meta property="article:tag" content="Server">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -1745,7 +1748,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1695736430094),
+    lastupdate: new Date(1695736579386),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2513,9 +2516,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <span hidden itemprop="name headline">
+      <h1 class="title" itemprop="name headline">
+        Crontab：自动计划任务
+      </h1>
+      <div class='new-meta-box'>
         
-      </span>
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://avatars.githubusercontent.com/u/102994215?v=4" class="lazyload" data-srcset="https://avatars.githubusercontent.com/u/102994215?v=4" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">MagicNue</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-09-26T13:53:00+00:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年9月26日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
 
@@ -2562,7 +2604,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-26T13:53:26+00:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-26T13:53:43+00:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2023年9月26日</p>
@@ -2573,6 +2615,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Code/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Code</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Server/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Server</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Linux/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Linux</p></a></div>
+  <span hidden itemprop="keywords">Code Server Linux</span>
+
 
         
       
@@ -2584,7 +2630,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/09/26/Crontab%EF%BC%9A%E8%87%AA%E5%8A%A8%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/&title= - MagicBook&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/09/26/Crontab%EF%BC%9A%E8%87%AA%E5%8A%A8%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/&title=Crontab：自动计划任务 - MagicBook&summary="
           
           >
           
@@ -2596,7 +2642,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/09/26/Crontab%EF%BC%9A%E8%87%AA%E5%8A%A8%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/&title= - MagicBook&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/09/26/Crontab%EF%BC%9A%E8%87%AA%E5%8A%A8%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/&title=Crontab：自动计划任务 - MagicBook&summary="
           
           >
           
@@ -2608,7 +2654,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/09/26/Crontab%EF%BC%9A%E8%87%AA%E5%8A%A8%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/&title= - MagicBook&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/09/26/Crontab%EF%BC%9A%E8%87%AA%E5%8A%A8%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/&title=Crontab：自动计划任务 - MagicBook&summary="
           
           >
           
@@ -2622,7 +2668,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
           
-            target="_blank" href="https://t.me/share/url?url=http://example.com/2023/09/26/Crontab%EF%BC%9A%E8%87%AA%E5%8A%A8%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/&text= - MagicBook"
+            target="_blank" href="https://t.me/share/url?url=http://example.com/2023/09/26/Crontab%EF%BC%9A%E8%87%AA%E5%8A%A8%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/&text=Crontab：自动计划任务 - MagicBook"
           
           >
           
@@ -2769,7 +2815,7 @@ ruffle_ is a Flash Player emulator built in the Rust programming language.ruffl
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3276,7 +3322,7 @@ ruffle_ is a Flash Player emulator built in the Rust programming language.ruffl
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"~MagicNue的魔法书~"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"MagicBook"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/09/26/Crontab：自动计划任务/"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"MagicBook","url":"http://example.com/","keywords":null,"description":"~MagicNue的魔法书~","author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"~MagicNue的魔法书~"},"publisher":{"@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"~MagicNue的魔法书~","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/09/26/Crontab%EF%BC%9A%E8%87%AA%E5%8A%A8%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/"},"author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"MagicBook","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/09/26/Crontab%EF%BC%9A%E8%87%AA%E5%8A%A8%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/","wordCount":0,"datePublished":"2023-09-26T13:53:00.000Z","dateModified":"2023-09-26T13:53:26.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"~MagicNue的魔法书~"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"MagicBook"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/09/26/Crontab：自动计划任务/","name":"Crontab：自动计划任务"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"MagicBook","url":"http://example.com/","keywords":null,"description":"~MagicNue的魔法书~","author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"~MagicNue的魔法书~"},"publisher":{"@type":"Organization","name":"MagicBook","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Crontab：自动计划任务","description":"Linux _crontab_ 是用来定期执行程序的命令。想要服务器定时任务的话，可以用它实现。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/09/26/Crontab%EF%BC%9A%E8%87%AA%E5%8A%A8%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/"},"author":{"@type":"Person","name":"MagicNue","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"MagicBook","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/09/26/Crontab%EF%BC%9A%E8%87%AA%E5%8A%A8%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/","wordCount":0,"datePublished":"2023-09-26T13:53:00.000Z","dateModified":"2023-09-26T13:53:43.000Z","keywords":"Code,Server,Linux","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
