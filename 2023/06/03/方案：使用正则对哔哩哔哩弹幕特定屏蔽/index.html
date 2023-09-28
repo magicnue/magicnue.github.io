@@ -1747,7 +1747,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1695737120098),
+    lastupdate: new Date(1695868945482),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2564,10 +2564,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
     <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。<br>使用正则表达式能够更加灵活地使用正则表达式去屏蔽b站中不喜欢的类型的弹幕。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Bilibili 屏蔽词分享平台</span><br><span class="line">传送门：[Bilibili 屏蔽词分享平台](https://harrynull.tech/bilibili/#)</span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Bilibili 屏蔽词分享平台</span><br><span class="line">传送门：[Bilibili 屏蔽词分享平台](https:<span class="regexp">//</span>harrynull.tech<span class="regexp">/bilibili/</span><span class="comment">#)</span></span><br></pre></td></tr></table></figure>
 <h3 id="正则的特性"><a href="#正则的特性" class="headerlink" title="正则的特性"></a>正则的特性</h3><ul>
 <li>在表达式的前后有两个斜杠：&#x2F;&#x2F;<br>斜杠本身不是正则表达式的一部分。他的作用仅仅是声明斜杠中的内容以正则表达式处理。</li>
-<li>基本的特殊字符有：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">- ^ 匹配字符串的开头</span><br><span class="line">- $ 匹配字符串的结尾</span><br><span class="line">- . 匹配任意一个字符</span><br><span class="line">- ? 修饰前方的字符串，表示可有可无</span><br><span class="line">- * 修饰前方的字符串，表示没有或者任意个</span><br><span class="line">- + 修饰前方的字符串，表示至少一个</span><br><span class="line">- &#123;m,n&#125; 修饰前方的字符串，表示有m、m+1、……、n个（m&lt;n)（故“?”等于“&#123;0,1&#125;“）</span><br><span class="line">- &#123;m,&#125; 修饰前方的字符串，表示至少有m个（故“*”等于“&#123;0,&#125;”；“+”等于“&#123;1,&#125;”）</span><br></pre></td></tr></table></figure></li>
+<li>基本的特殊字符有：<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">- </span>^ 匹配字符串的开头</span><br><span class="line"><span class="bullet">- </span>$ 匹配字符串的结尾</span><br><span class="line"><span class="bullet">- </span>. 匹配任意一个字符</span><br><span class="line"><span class="bullet">- </span>? 修饰前方的字符串，表示可有可无</span><br><span class="line"><span class="bullet">- </span>* 修饰前方的字符串，表示没有或者任意个</span><br><span class="line"><span class="bullet">- </span>+ 修饰前方的字符串，表示至少一个</span><br><span class="line"><span class="bullet">- </span>&#123;m,n&#125; 修饰前方的字符串，表示有m、m+1、……、n个（m&lt;n)（故“?”等于“&#123;0,1&#125;“）</span><br><span class="line"><span class="bullet">- </span>&#123;m,&#125; 修饰前方的字符串，表示至少有m个（故“*”等于“&#123;0,&#125;”；“+”等于“&#123;1,&#125;”）</span><br></pre></td></tr></table></figure></li>
 </ul>
 
   </div>
